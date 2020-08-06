@@ -1,0 +1,94 @@
+@import"https://fonts.googleapis.com/css?family=Roboto+Slab";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline
+}
+body{
+  margin: 0 auto;
+  padding: 10px
+}
+header{
+  text-align: center
+}
+h1{
+  margin:18px;
+  font-size: 120%;
+  font-family:'Roboto Slab', serif
+}
+section article p#presentation{
+  font-family:'Roboto Slab', serif;
+  text-align: center;
+  font-size:56%;
+  width: 55%;
+  margin: 0 auto
+}
+section#bannerForm{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top:20px
+}
+section#bannerForm div{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width:30%;
+  margin: 10px
+}
+section#bannerForm div img{
+  width: 100%;
+  height: auto
+}
+div#form{
+  padding:24px;
+  background: #FFF;
+  border-radius:12px;
+  box-shadow: 0 0 12px #CCC
+}
+label{
+  font-family:'Roboto Slab', serif;
+  display: block;
+  font-weight: bold;
+  font-size: 85%;
+  font-family: sans-serif;
+  margin: 10px 0px 10px 0px
+}
+input[type=text], input[type=email], select{
+  background: #fff;
+  display: block;
+  width: 94%;
+  padding: 9px;
+  border:1px solid #cdcdcd;
+  border-radius:4px;
+  margin: 0px 0px 16px 0px
+}
+input[type=text]:focus, input[type=email]:focus, select:focus{
+  background: lightyellow;
+  outline: none
+}
+select{
+  width:100%;
+}
+input[type=submit] {
+  display: block;
+  width: 110px;
+  border-radius: 180px;
+  background: #F4457D;
+  margin: 0 auto;
+  padding: 14px;
+  border: 0;
+  font-weight: bold;
+  color:#F5F5F5;
+  outline: none;
+}
+@media (max-width:460px){
+  section#bannerForm div{
+     width:78%;
+  }
+  input[type=text], input[type=email]{
+    width: 92%;
+  }
+}
