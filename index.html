@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML-PruebaDesarrolloWeb</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img loading="lazy" src="images/sigma-logo.png" alt="logo" />
+  <h1>Prueba de desarrollo Sigma</h1>
+</header>
+<section>
+  <article>
+    <p id="presentation">
+      Lorem ipsum is simple dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type an scrambled it to make a type specimen book
+    </p>
+  </article>
+</section>
+<section id="bannerForm">
+  <div>
+    <img loading="lazy" src="images/sigma-image.png" alt="banner" />
+  </div>
+  <div id="form">
+    <form action="Controlador.php" method="post" onsubmit="return validation(this)" accept-charset="utf-8">
+      <label for="departamento">Departamento*</label>
+      <select name="state" id="state" required autofocus onchange="loadCity();">
+        <option value="noState">Seleccione departamento</option>
+      </select>
+      <label for="ciudad">Ciudad*</label>
+      <select name="city" id="city" required>
+      </select>
+      <label for="nombre">Nombre*</label>
+      <input type="text" name="name" id="name" placeholder="Pepito de Jesús" required maxlength="50" />
+      <label for="correo">Correo*</label>
+      <input type="email" name="email" id="email" value="" placeholder="Pepitodejesus@gmail.com" required maxlength="30" />
+      <input type="submit" name="send" id="send" value="ENVIAR" />
+    </form>
+  </div>
+</section>  
+  <script src="js/main.js"></script>
+</body>
+</html>
